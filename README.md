@@ -50,7 +50,7 @@ The project can be deployed to Vercel, Netlify or Cloudflare-Pages.
 
 Any database Prisma supports. For example MySQL, PostgreSQL or MongoDB.
 
-[list of existing lucia auth database adapters (including prisma adapter)](https://lucia-auth.com/basics/database/)
+[list of existing lucia auth database adapters (including prisma adapter)](https://lucia-auth.com/basics/database/)  
 [list of supported databases for prisma ORM](https://www.prisma.io/docs/reference/database-reference/supported-databases)
 
 ## Development
@@ -76,5 +76,5 @@ npm run preview
 
 ## Contributing
 
-Use `npm run commit` instead of `git commit -m "..."`
+Use `npm run commit` instead of `git commit -m "..."`  
 Use `npm run prepare` before committing the first time.
