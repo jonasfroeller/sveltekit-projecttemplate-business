@@ -22,29 +22,29 @@ The project can be deployed to Vercel, Netlify or Cloudflare-Pages.
 
 ## Tech Stack
 
-* **JS-Framework**: [SvelteKit](https://kit.svelte.dev/docs/creating-a-project)
-* **CSS-Utility-Class-Library**: [TailwindCSS](https://tailwindcss.com/docs/guides/sveltekit)
-  * *Including*: [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-* **Form-Validation**: [sveltekit-superforms & zod](https://github.com/ciscoheat/sveltekit-superforms)
-* **Icons**: [iconify](https://iconify.design/docs/icon-components/svelte/)
-* **UI-Components**: [shadcn-svelte](https://www.shadcn-svelte.com/)
-* **Commits**: [commitizen/cz-conventional-changelog](https://github.com/commitizen/cz-cli)
-* **Testing**:
-  * Unit: [Vitest](https://vitest.dev/)
-  * Browser: [Playwright](https://playwright.dev/)
-* **Code-Formatting**: [Prettier](https://prettier.io/)
-* **Code-Linting**: [Eslint](https://eslint.org/)
+-   **JS-Framework**: [SvelteKit](https://kit.svelte.dev/docs/creating-a-project)
+-   **CSS-Utility-Class-Library**: [TailwindCSS](https://tailwindcss.com/docs/guides/sveltekit)
+    -   _Including_: [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+-   **Form-Validation**: [sveltekit-superforms & zod](https://github.com/ciscoheat/sveltekit-superforms)
+-   **Icons**: [iconify](https://iconify.design/docs/icon-components/svelte/)
+-   **UI-Components**: [shadcn-svelte](https://www.shadcn-svelte.com/)
+-   **Commits**: [commitizen/cz-conventional-changelog](https://github.com/commitizen/cz-cli)
+-   **Testing**:
+    -   Unit: [Vitest](https://vitest.dev/)
+    -   Browser: [Playwright](https://playwright.dev/)
+-   **Code-Formatting**: [Prettier](https://prettier.io/)
+-   **Code-Linting**: [Eslint](https://eslint.org/)
 
 ---
 
-* **Authentication**: [Lucia](https://lucia-auth.com/getting-started/sveltekit/)
-* **CMS**: [BuilderIO](https://www.builder.io/c/docs/developers)
-* **Database ([view supported](#supported-databases))**: [Planetscale](https://planetscale.com/).
-  * **ORM**: [Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-planetscale)
-* **Database Cache**:
-  * **Redis Database**: [Upstash](upstash.com)
-  * **Redis Client**: [ioredis](https://github.com/redis/ioredis)
-  * **Redis Middleware**: [prisma-redis-middleware](https://github.com/Asjas/prisma-redis-middleware)
+-   **Authentication**: [Lucia](https://lucia-auth.com/getting-started/sveltekit/)
+-   **CMS**: [BuilderIO](https://www.builder.io/c/docs/developers)
+-   **Database ([view supported](#supported-databases))**: [Planetscale](https://planetscale.com/).
+    -   **ORM**: [Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-planetscale)
+-   **Database Cache**:
+    -   **Redis Database**: [Upstash](upstash.com)
+    -   **Redis Client**: [ioredis](https://github.com/redis/ioredis)
+    -   **Redis Middleware**: [prisma-redis-middleware](https://github.com/Asjas/prisma-redis-middleware)
 
 ## Supported Databases
 

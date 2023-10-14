@@ -2,4 +2,6 @@
 	import '../app.css';
 </script>
 
-<slot />
+<main class="flex items-center justify-center min-h-screen">
+	<slot />
+</main>
