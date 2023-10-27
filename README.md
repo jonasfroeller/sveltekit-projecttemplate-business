@@ -72,6 +72,9 @@ npm run build
 
 # preview build
 npm run preview
+
+# skip husky
+<command> --no-verify
 ```
 
 ## Contributing
