@@ -59,7 +59,12 @@ const config = {
 			}
 		}
 	},
-	plugins: [tailwindcssAnimate]
+	plugins: [
+		tailwindcssAnimate,
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/container-queries')
+	]
 };
 
 export default config;
