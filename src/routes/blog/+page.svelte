@@ -10,7 +10,7 @@
 {#if canShowContent}
 	<section class="flex flex-col gap-4">
 		{#each data?.content?.results ?? [] as result}
-			<article class="p-2 rounded-lg bg-primary-foreground">
+			<article class="p-2 rounded-lg bg-secondary text-secondary-foreground">
 				<h2>{result?.data?.title}</h2>
 				<p>{@html result?.data?.body}</p>
 			</article>

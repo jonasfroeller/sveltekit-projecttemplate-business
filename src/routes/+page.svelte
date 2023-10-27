@@ -1,20 +1,19 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import type { PageData } from './$types';
-	import Icon from '@iconify/svelte';
+	import { buttonVariants } from '$lib/components/ui/button';
 
 	export let data: PageData;
 </script>
 
-<main class="flex items-center justify-center min-h-screen">
-	<h1 class="flex items-end font-bold text-8xl">
-		Hello&nbsp;<Icon icon="bx:world" />!
-	</h1>
+<main class="flex flex-col items-center justify-center min-h-screen">
+	<h1 class="flex items-end font-bold text-8xl">Account Information</h1>
 
-	<h1>Profile</h1>
-	<p>User id: {data.userId}</p>
-	<p>GitHub username: {data.username}</p>
+	<div class="pt-2 pb-4">
+		<p class="text-4xl">User id: {data.userId}</p>
+		<p class="text-4xl">Username: {data.username}</p>
+	</div>
 	<form method="post" action="?/logout" use:enhance>
-		<input type="submit" value="Sign out" />
+		<input type="submit" value="Sign out" class={buttonVariants({ variant: 'outline' })} />
 	</form>
 </main>

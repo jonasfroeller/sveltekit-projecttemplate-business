@@ -1,29 +1,76 @@
 <script lang="ts">
 	import * as Tabs from '$lib/components/ui/tabs';
+	import * as Card from '$lib/components/ui/card';
+	import { Separator } from '$lib/components/ui/separator';
+	import { buttonVariants } from '$lib/components/ui/button';
+	import { Label } from '$lib/components/ui/label';
+	import { Input } from '$lib/components/ui/input';
 	import Icon from '@iconify/svelte';
 	import { enhance } from '$app/forms';
 </script>
 
-<section class="dark">
-	<Tabs.Root value="login" class="p-2 border-2 rounded-lg bg-primary border-secondary">
-		<Tabs.List>
-			<Tabs.Trigger value="login">login</Tabs.Trigger>
-			<Tabs.Trigger value="signin">signin</Tabs.Trigger>
+<section class="p-4 border-2 rounded-lg border-secondary">
+	<Tabs.Root value="username-password" class="w-[400px]">
+		<Tabs.List class="grid w-full grid-cols-2">
+			<Tabs.Trigger value="username-password">Username & Password</Tabs.Trigger>
+			<Tabs.Trigger value="open-authorization">Open Authorization</Tabs.Trigger>
 		</Tabs.List>
-		<Tabs.Content value="login" class="bg-primary">
-			<a href="/login/github" class="flex items-center gap-2 hover:underline"
-				><Icon icon="mdi:github" width="25px" />login with GitHub</a
-			>
-			<form method="post" use:enhance>
-				<label for="username">Username</label>
-				<input name="username" id="username" /><br />
-				<label for="password">Password</label>
-				<input type="password" name="password" id="password" /><br />
-				<input type="submit" />
-			</form>
+		<Tabs.Content value="username-password">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Username & Password</Card.Title>
+					<Card.Description>LogIn using your username and password.</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+					<form method="post" use:enhance>
+						<Label for="username">Username</Label>
+						<Input
+							type="text"
+							placeholder="jonesis69"
+							name="username"
+							id="username"
+							class="max-w-xs"
+						/>
+						<Label for="password">Password</Label>
+						<Input
+							type="password"
+							placeholder="********"
+							name="password"
+							id="password"
+							class="max-w-xs"
+						/>
+						<input
+							type="submit"
+							class={`mt-2 ${buttonVariants({ variant: 'outline' })}`}
+						/>
+					</form>
+				</Card.Content>
+				<Card.Footer>
+					<p class="flex justify-center">
+						<a href="/signin" class="hover:underline">signin</a>&nbsp;instead
+					</p>
+				</Card.Footer>
+			</Card.Root>
 		</Tabs.Content>
-		<Tabs.Content value="signin">
-			<a href="/signin">signin (username, password)</a>
+		<Tabs.Content value="open-authorization">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Open Authorization</Card.Title>
+					<Card.Description>Choose a provider below.</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+					<a href="/login/github" class="flex items-center gap-2 hover:underline">
+						<Icon icon="mdi:github" width="25px" />
+						login with GitHub
+					</a>
+					<Separator class="my-4" />
+				</Card.Content>
+				<Card.Footer>
+					<p class="flex justify-center">
+						<a href="/signin" class="hover:underline">signin</a>&nbsp;instead
+					</p>
+				</Card.Footer>
+			</Card.Root>
 		</Tabs.Content>
 	</Tabs.Root>
 </section>
