@@ -16,6 +16,15 @@
 	],
 	"license": "MIT",
 	"funding": "https://buymeacoffee.com/jonasfroeller",
+	"type": "module",
+	"engines": {
+		"node": ">=18.13.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
 	"scripts": {
 		"all": "npm-run-all --parallel dev check",
 		"dev": "vite dev",
@@ -67,7 +76,6 @@
 		"vitest": "^1.0.0",
 		"zod": "^3.21.4"
 	},
-	"type": "module",
 	"dependencies": {
 		"@builder.io/sdk-svelte": "^0.6.4",
 		"@lucia-auth/adapter-prisma": "^3.0.1",
@@ -85,10 +93,5 @@
 		"tailwind-merge": "^1.14.0",
 		"tailwind-variants": "^0.1.16",
 		"tailwindcss-animate": "^1.0.6"
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
 	}
 }
