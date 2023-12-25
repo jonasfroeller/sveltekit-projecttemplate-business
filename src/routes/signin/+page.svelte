@@ -9,6 +9,10 @@
 	import { enhance } from '$app/forms';
 </script>
 
+<svelte:head>
+	<title>SignIn</title>
+</svelte:head>
+
 <section class="p-4 border-2 rounded-lg border-secondary">
 	<Tabs.Root value="username-password" class="w-[400px]">
 		<Tabs.List class="grid w-full grid-cols-2">

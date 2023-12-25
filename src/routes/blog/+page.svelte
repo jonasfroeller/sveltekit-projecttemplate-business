@@ -7,6 +7,10 @@
 	const canShowContent = data.content || isPreviewing();
 </script>
 
+<svelte:head>
+	<title>Blog</title>
+</svelte:head>
+
 {#if canShowContent}
 	<section class="flex flex-col gap-4">
 		{#each data?.content?.results ?? [] as result}

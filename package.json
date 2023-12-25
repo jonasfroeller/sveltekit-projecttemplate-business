@@ -18,7 +18,7 @@
 	"funding": "https://buymeacoffee.com/jonasfroeller",
 	"type": "module",
 	"engines": {
-		"node": ">=18.13.0"
+		"node": ">=18"
 	},
 	"config": {
 		"commitizen": {
