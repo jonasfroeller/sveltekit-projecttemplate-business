@@ -1,6 +1,7 @@
 <script lang="ts">
 	const modules = import.meta.glob('./**/**+page*.svelte');
 	import ThemeSwitch from '$component/ThemeSwitch.svelte';
+	import { ModeWatcher } from 'mode-watcher';
 	import { Toaster } from '$lib/components/ui/sonner';
 	import '$main/app.css';
 	import '$main/style.scss';
@@ -15,6 +16,7 @@
 	}
 </script>
 
+<ModeWatcher />
 <Toaster />
 
 <header class="sticky top-0 p-4 shadow-lg bg-secondary text-secondary-foreground">

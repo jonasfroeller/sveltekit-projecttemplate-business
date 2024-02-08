@@ -1,14 +1,17 @@
 <script lang="ts">
 	import { Switch } from '$component/ui/switch';
-	import { theme } from '$lib/store/theme';
-	import { updateTheme } from '$lib/dom';
+	import { toggleMode, mode as mw_mode } from 'mode-watcher';
+	import { onMount } from 'svelte';
 
-	$: {
-		$theme = checked ? 'dark' : 'light';
-		updateTheme($theme);
+	onMount(() => {
+		mode.checked = $mw_mode === 'dark' ? true : false;
+	});
+
+	$: if (mode) {
+		toggleMode();
 	}
 
-	let checked = $theme === 'dark' ? true : false;
+	let mode = { checked: false };
 </script>
 
-<Switch bind:checked />
+<Switch bind:checked={mode.checked} />
