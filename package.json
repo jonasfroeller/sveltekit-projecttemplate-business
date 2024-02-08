@@ -87,7 +87,9 @@
 		"html-minifier": "^4.0.0",
 		"lucia": "^2.7.2",
 		"lucide-svelte": "^0.268.0",
+		"mode-watcher": "^0.2.0",
 		"svelte-persisted-store": "^0.7.0",
+		"svelte-sonner": "^0.3.16",
 		"tailwind-merge": "^1.14.0",
 		"tailwind-variants": "^0.1.16",
 		"tailwindcss-animate": "^1.0.6"

@@ -2,6 +2,8 @@
 	import { enhance } from '$app/forms';
 	import type { PageData } from './$types';
 	import { buttonVariants } from '$lib/components/ui/button';
+	import { Button } from '$component/ui/button';
+	import { toast } from 'svelte-sonner';
 
 	export let data: PageData;
 </script>
@@ -16,4 +18,6 @@
 	<form method="post" action="?/logout" use:enhance>
 		<input type="submit" value="Sign out" class={buttonVariants({ variant: 'outline' })} />
 	</form>
+
+	<Button class="mt-2" on:click={() => toast('showing toast')}>Show toast</Button>
 </main>
