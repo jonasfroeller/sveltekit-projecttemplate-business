@@ -15,11 +15,9 @@ This template is an extended version of [sveltekit-projecttemplate-hobby](https:
 
 ## Deployment
 
-The project can be deployed to Vercel, Netlify or Cloudflare-Pages.
+The project can be deployed to Vercel or as a docker container (Netlify and Cloudflare do not work properly with some functionalities.).
 
-[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=sveltekit-projecttemplate-business.vercel.app)](https://sveltekit-projecttemplate-business.vercel.app)
-![CloudflarePages](https://img.shields.io/website/https/sveltekit-projecttemplate-business.pages.dev?logo=cloudflarepages&label=cloudlare)
-![Netlify](https://img.shields.io/website/https/sveltekit-projecttemplate-business.netlify.app?logo=netlify&label=netlify)
+![Vercel](https://img.shields.io/github/deployments/jonasfroeller/sveltekit-projecttemplate-business/production?style=flat&logo=vercel&logoColor=white&label=vercel&labelColor=vercel)
 
 ## Tech Stack
 
