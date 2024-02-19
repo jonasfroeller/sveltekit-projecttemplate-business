@@ -52,7 +52,7 @@
 					</form>
 				</Card.Content>
 				<Card.Footer>
-					<p class="flex justify-center">
+					<p class="flex justify-center gap-1">
 						<a href="/login" class="hover:underline">login</a>&nbsp;instead
 					</p>
 				</Card.Footer>
@@ -72,7 +72,7 @@
 					<Separator class="my-4" />
 				</Card.Content>
 				<Card.Footer>
-					<p class="flex justify-center">
+					<p class="flex justify-center gap-1">
 						<a href="/login" class="hover:underline">login</a>&nbsp;instead
 					</p>
 				</Card.Footer>

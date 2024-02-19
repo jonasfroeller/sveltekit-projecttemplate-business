@@ -19,7 +19,7 @@
 <ModeWatcher />
 <Toaster />
 
-<header class="sticky top-0 p-4 shadow-lg bg-secondary text-secondary-foreground">
+<header class="sticky top-0 p-4 shadow-lg bg-background">
 	<nav class="flex">
 		<span class="flex gap-6">
 			<a class="hover:underline" href="/">home</a>
@@ -39,7 +39,7 @@
 	<slot />
 </main>
 
-<footer class="flex justify-center gap-6 p-4 shadow-inner bg-secondary text-secondary-foreground">
+<footer class="flex justify-center gap-6 p-4 shadow-inner bg-background">
 	{#each paths as path}
 		<a class="hover:underline" href={path[0]}>{path[1]}</a>
 	{:else}

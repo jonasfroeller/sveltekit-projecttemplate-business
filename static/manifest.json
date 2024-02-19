@@ -2,8 +2,10 @@
 	"name": "",
 	"short_name": "",
 	"description": "",
+	"theme_color": "",
+	"background_color": "",
 	"start_url": "/",
-	"display": "browser",
+	"display": "standalone",
 	"icons": [
 		{
 			"src": "/favicons/darkmode/manifest-icon-192.maskable.png",

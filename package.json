@@ -39,8 +39,8 @@
 		"commit": "cz",
 		"prepare": "husky install && npx prisma generate",
 		"generate-favicons": "npm-run-all generate-dark-favicons generate-light-favicons",
-		"generate-dark-favicons": "pwa-asset-generator ./static/favicons/favicon-dark.svg ./static/favicons/darkmode --index ./src/app.html --path-override '%sveltekit.assets%/favicons/darkmode' --type png --opaque false --dark-mode --favicon --n",
-		"generate-light-favicons": "pwa-asset-generator ./static/favicons/favicon-light.svg ./static/favicons/lightmode --index ./src/app.html --path-override '%sveltekit.assets%/favicons/lightmode' --type png --opaque false --favicon --n"
+		"generate-dark-favicons": "pwa-asset-generator ./static/favicons/favicon-dark.svg ./static/favicons/darkmode --index ./src/app.html --path-override '%sveltekit.assets%/favicons/darkmode' --type png --opaque false --dark-mode --favicon --n --p 2%",
+		"generate-light-favicons": "pwa-asset-generator ./static/favicons/favicon-light.svg ./static/favicons/lightmode --index ./src/app.html --path-override '%sveltekit.assets%/favicons/lightmode' --type png --opaque false --favicon --n --p 2%"
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^3.1.4",
